@@ -8,12 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-//test
+    @IBOutlet weak var appNameLabel: UILabel!
+    @IBOutlet weak var appDescribLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func loginButtonClicked(_ sender: Any) {
+    }
+    @IBAction func registerButtonClicked(_ sender: Any) {
+    }
+    
 
 }
 

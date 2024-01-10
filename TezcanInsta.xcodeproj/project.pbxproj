@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0891442B4F0EBF00F114DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0891432B4F0EBF00F114DE /* LoginViewController.swift */; };
+		EC0891462B4F0ECD00F114DE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0891452B4F0ECD00F114DE /* RegisterViewController.swift */; };
 		ECB41A2A2B4DEED700FA5F38 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ECB41A292B4DEED700FA5F38 /* FirebaseAnalytics */; };
 		ECB41A2C2B4DEED700FA5F38 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ECB41A2B2B4DEED700FA5F38 /* FirebaseAnalyticsOnDeviceConversion */; };
 		ECB41A2E2B4DEED700FA5F38 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECB41A2D2B4DEED700FA5F38 /* FirebaseAnalyticsSwift */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC0891432B4F0EBF00F114DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EC0891452B4F0ECD00F114DE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		ECBA4E112B4DC648006C3C2A /* TezcanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TezcanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBA4E142B4DC648006C3C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBA4E162B4DC648006C3C2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				ECBA4E142B4DC648006C3C2A /* AppDelegate.swift */,
 				ECBA4E162B4DC648006C3C2A /* SceneDelegate.swift */,
 				ECBA4E182B4DC648006C3C2A /* ViewController.swift */,
+				EC0891432B4F0EBF00F114DE /* LoginViewController.swift */,
+				EC0891452B4F0ECD00F114DE /* RegisterViewController.swift */,
 				ECBA4E1A2B4DC648006C3C2A /* Main.storyboard */,
 				ECBA4E1D2B4DC649006C3C2A /* Assets.xcassets */,
 				ECBA4E1F2B4DC649006C3C2A /* LaunchScreen.storyboard */,
@@ -228,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0891442B4F0EBF00F114DE /* LoginViewController.swift in Sources */,
+				EC0891462B4F0ECD00F114DE /* RegisterViewController.swift in Sources */,
 				ECBA4E192B4DC648006C3C2A /* ViewController.swift in Sources */,
 				ECBA4E152B4DC648006C3C2A /* AppDelegate.swift in Sources */,
 				ECBA4E172B4DC648006C3C2A /* SceneDelegate.swift in Sources */,
