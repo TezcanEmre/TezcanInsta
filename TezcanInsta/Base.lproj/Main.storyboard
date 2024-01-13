@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ud6-hn-1Cs">
-                                <rect key="frame" x="153" y="409" width="87" height="35"/>
+                                <rect key="frame" x="153" y="408.66666666666669" width="87" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
@@ -45,11 +45,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Duf-lN-kq6">
-                                <rect key="frame" x="153" y="475" width="87" height="35"/>
+                                <rect key="frame" x="153" y="474.66666666666669" width="87" height="35.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                 <connections>
-                                    <action selector="registerButtonClicke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVw-Kh-Ceq"/>
+                                    <action selector="registerButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TWt-t3-b5l"/>
                                     <segue destination="XJ1-6g-P0c" kind="presentation" identifier="toRegisterVC" modalPresentationStyle="fullScreen" id="iek-Z7-3Az"/>
                                 </connections>
                             </button>
@@ -128,13 +128,13 @@
                                 <rect key="frame" x="107" y="223" width="196" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cad-RM-N5L">
                                 <rect key="frame" x="107" y="265" width="196" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBI-FP-n4R">
                                 <rect key="frame" x="107" y="463" width="128" height="35"/>
@@ -143,6 +143,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Register"/>
                                 <connections>
                                     <action selector="registerClicked:" destination="XJ1-6g-P0c" eventType="touchUpInside" id="Vn9-5f-qgq"/>
+                                    <segue destination="dZh-Yz-rrj" kind="presentation" identifier="toLoginVC2" modalPresentationStyle="fullScreen" id="pgC-fQ-JJd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password must have: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycm-VF-U62">
@@ -234,33 +235,49 @@
             </objects>
             <point key="canvasLocation" x="414.50381679389312" y="-182.3943661971831"/>
         </scene>
-        <!--Item 2-->
+        <!--Profile-->
+        <scene sceneID="XAa-Yr-pnK">
+            <objects>
+                <viewController id="rkU-Uk-nwj" customClass="ProfileViewController" customModule="TezcanInsta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BDC-vZ-1ct">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bVi-JX-2YX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.crop.circle" catalog="system" id="U4b-73-Dei"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySK-3o-ZSq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="737"/>
+        </scene>
+        <!--Upload-->
         <scene sceneID="fAH-GV-C9O">
             <objects>
-                <viewController id="GvC-ee-Hkh" sceneMemberID="viewController">
+                <viewController id="GvC-ee-Hkh" customClass="UploadViewController" customModule="TezcanInsta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PhQ-E3-9c1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="aTu-vd-nhW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xW7-tR-Rr6"/>
+                    <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up.circle.fill" catalog="system" id="xW7-tR-Rr6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IdW-Vp-8IL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2172" y="175"/>
+            <point key="canvasLocation" x="2172" y="201"/>
         </scene>
-        <!--Item 1-->
+        <!--Feed-->
         <scene sceneID="znJ-P4-weQ">
             <objects>
-                <viewController id="wEl-lk-UdZ" sceneMemberID="viewController">
+                <viewController id="wEl-lk-UdZ" customClass="FeedViewController" customModule="TezcanInsta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yhr-d9-loG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6M5-BY-mLk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="YRo-EW-lrU"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="photo.on.rectangle.fill" catalog="system" id="YRo-EW-lrU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IvL-IK-hMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,6 +296,7 @@
                     <connections>
                         <segue destination="wEl-lk-UdZ" kind="relationship" relationship="viewControllers" id="vMd-td-JWE"/>
                         <segue destination="GvC-ee-Hkh" kind="relationship" relationship="viewControllers" id="AJr-Ag-1Kh"/>
+                        <segue destination="rkU-Uk-nwj" kind="relationship" relationship="viewControllers" id="Kk3-zy-KQG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOP-XL-Phb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -286,7 +304,13 @@
             <point key="canvasLocation" x="1265" y="-173"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="pgC-fQ-JJd"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="photo.on.rectangle.fill" catalog="system" width="128" height="102"/>
+        <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

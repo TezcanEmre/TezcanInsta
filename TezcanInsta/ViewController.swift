@@ -13,14 +13,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toLoginVC" { let destinationVC = segue.destination as! LoginViewController }
+        else if segue.identifier == "toRegisterVC" { let destinationVC = segue.destination as! RegisterViewController } }
     
-    @IBAction func loginButtonClicked(_ sender: Any) {
+    @IBAction func loginButtonClicked(_ sender: Any) { performSegue(withIdentifier: "toLoginVC", sender: nil) }
+    @IBAction func registerButtonClicked(_ sender: Any) { performSegue(withIdentifier: "toRegisterVC", sender: nil) }
     }
-    @IBAction func registerButtonClicked(_ sender: Any) {
-    }
-    
-
-}
 

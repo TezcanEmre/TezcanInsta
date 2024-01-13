@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		EC0891442B4F0EBF00F114DE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0891432B4F0EBF00F114DE /* LoginViewController.swift */; };
 		EC0891462B4F0ECD00F114DE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0891452B4F0ECD00F114DE /* RegisterViewController.swift */; };
+		EC6871772B50709C00C08613 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6871762B50709C00C08613 /* FeedViewController.swift */; };
+		EC6871792B5070BC00C08613 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6871782B5070BC00C08613 /* UploadViewController.swift */; };
+		EC68717B2B5070CD00C08613 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC68717A2B5070CD00C08613 /* ProfileViewController.swift */; };
 		ECB41A2A2B4DEED700FA5F38 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = ECB41A292B4DEED700FA5F38 /* FirebaseAnalytics */; };
 		ECB41A2C2B4DEED700FA5F38 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = ECB41A2B2B4DEED700FA5F38 /* FirebaseAnalyticsOnDeviceConversion */; };
 		ECB41A2E2B4DEED700FA5F38 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ECB41A2D2B4DEED700FA5F38 /* FirebaseAnalyticsSwift */; };
@@ -48,6 +51,9 @@
 /* Begin PBXFileReference section */
 		EC0891432B4F0EBF00F114DE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC0891452B4F0ECD00F114DE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EC6871762B50709C00C08613 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EC6871782B5070BC00C08613 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		EC68717A2B5070CD00C08613 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ECBA4E112B4DC648006C3C2A /* TezcanInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TezcanInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBA4E142B4DC648006C3C2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECBA4E162B4DC648006C3C2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 				ECBA4E182B4DC648006C3C2A /* ViewController.swift */,
 				EC0891432B4F0EBF00F114DE /* LoginViewController.swift */,
 				EC0891452B4F0ECD00F114DE /* RegisterViewController.swift */,
+				EC6871762B50709C00C08613 /* FeedViewController.swift */,
+				EC6871782B5070BC00C08613 /* UploadViewController.swift */,
+				EC68717A2B5070CD00C08613 /* ProfileViewController.swift */,
 				ECBA4E1A2B4DC648006C3C2A /* Main.storyboard */,
 				ECBA4E1D2B4DC649006C3C2A /* Assets.xcassets */,
 				ECBA4E1F2B4DC649006C3C2A /* LaunchScreen.storyboard */,
@@ -235,9 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC0891442B4F0EBF00F114DE /* LoginViewController.swift in Sources */,
+				EC6871792B5070BC00C08613 /* UploadViewController.swift in Sources */,
 				EC0891462B4F0ECD00F114DE /* RegisterViewController.swift in Sources */,
 				ECBA4E192B4DC648006C3C2A /* ViewController.swift in Sources */,
 				ECBA4E152B4DC648006C3C2A /* AppDelegate.swift in Sources */,
+				EC6871772B50709C00C08613 /* FeedViewController.swift in Sources */,
+				EC68717B2B5070CD00C08613 /* ProfileViewController.swift in Sources */,
 				ECBA4E172B4DC648006C3C2A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
